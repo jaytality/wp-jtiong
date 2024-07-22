@@ -34,22 +34,22 @@
                             ?>
                                 <div class="row entry" id="post-<?php the_ID(); ?>">
                                     <div class="col-sm-6">
-                                        //
+                                        <?php wp_jtiong_posted_author(); ?> posted this in: <?=get_the_category_list(', ')?>
                                     </div>
                                     <div class="col-sm-6 text-right">
-                                        //
+                                        <?=wp_jtiong_get_post_date()?> &bull; <?=wp_jtiong_get_post_word_count()?>
                                     </div>
                                 </div>
                                 <div class="row entry-title">
                                     <div class="col-sm-12">
-                                        <h3 class="entry-title p-name">
+                                        <h2 class="entry-title p-name">
                                             <a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>" rel="bookmark"><?php the_title(); ?></a>
-                                        </h3>
+                                        </h2>
                                     </div>
                                 </div>
-                                <div class="row entry-content">
+                                <div class="row entry-body">
                                     <div class="col-sm-12">
-                                        <?php the_excerpt(); ?>
+                                        <?php the_content(); ?>
                                     </div>
                                 </div>
                                 <div class="row entry-footer">

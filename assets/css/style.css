@@ -48,16 +48,19 @@ hr {
 **/
 .entry {
     color: #777;
-    font-size: x-small;
+    font-size: small;
 }
 .entry-title {
     font-weight: bolder;
 }
 
 .entry-body {
-    /**/
+    color: #ccc;
 }
+    h2.wp-block-heading {
+        font-size: 1.8rem;
+    }
 
 .entry-footer {
-    padding-bottom: 32px;
+    padding-bottom: 64px;
 }
