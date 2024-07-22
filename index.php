@@ -60,7 +60,8 @@
                                 <div class="row entry-footer">
                                     <div class="col-sm-12">
                                         <hr>
-				                        Tagged: <span style="text-transform: lowercase; "><?=get_the_tag_list('', ', ')?></span>
+				                        <small class="text-muted">Tagged: <span style="text-transform: lowercase; "><?=get_the_tag_list('', ', ')?></span></small>
+                                        <hr>
                                     </div>
                                 </div>
                             <?php
