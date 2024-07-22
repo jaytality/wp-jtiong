@@ -58,6 +58,8 @@
                             <?php
                         endwhile;
                     endif;
+
+                    wp_jtiong_content_nav( 'nav-below' );
                     ?>
                 </div>
             </div>

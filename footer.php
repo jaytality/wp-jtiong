@@ -29,6 +29,8 @@
     <script src="/public/js/app.js?<?=uniqid()?>"></script>
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3106157556180197" crossorigin="anonymous"></script>
 
+<?php wp_footer(); ?>
+
 </body>
 
 </html>

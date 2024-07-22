@@ -7,6 +7,77 @@ function theme_styles() {
 
 add_action( 'wp_enqueue_scripts', 'theme_styles' );
 
+if ( !function_exists( 'wp_jtiong_content_nav' ) ) :
+	/**
+	 * Display navigation to next/previous pages when applicable
+	 *
+	 * @since Independent Publisher 1.0
+	 */
+	function wp_jtiong_content_nav( $nav_id ) {
+		global $wp_query, $post;
+
+		// Don't print empty markup on single pages if there's nowhere to navigate.
+		if ( is_single() ) {
+			$previous = ( is_attachment() ) ? get_post( $post->post_parent ) : get_adjacent_post( false, '', true );
+			$next     = get_adjacent_post( false, '', false );
+
+			if ( !$next && !$previous ) {
+				return;
+			}
+		}
+
+		// Don't print empty markup in archives if there's only one page.
+		if ( $wp_query->max_num_pages < 2 && ( is_home() || is_archive() || is_search() ) ) {
+			return;
+		}
+
+		$nav_class = 'site-navigation paging-navigation';
+		if ( is_single() ) {
+			$nav_class = 'site-navigation post-navigation';
+		}
+
+		?>
+		<nav role="navigation" id="<?php echo $nav_id; ?>" class="<?php echo $nav_class; ?>">
+			<h1 class="screen-reader-text"><?php _e( 'Post navigation', 'wp-jtiong' ); ?></h1>
+
+			<?php if ( is_single() ) : // navigation links for single posts ?>
+
+				<?php wp_pagenavi(); ?>
+
+				<?php previous_post_link( '<div class="nav-previous"><button class="btn btn-danger">%link</button></div>', '<span class="meta-nav">' . _x( '&larr;', 'Previous post link', 'wp-jtiong' ) . '</span> %title' ); ?>
+				<?php next_post_link( '<div class="nav-next"><button class="btn btn-danger">%link</button></div>', '%title <span class="meta-nav">' . _x( '&rarr;', 'Next post link', 'wp-jtiong' ) . '</span>' ); ?>
+
+			<?php elseif ( $wp_query->max_num_pages > 1 && ( is_home() || is_archive() || is_search() ) ) : // navigation links for home, archive, and search pages ?>
+
+				<?php if (function_exists('wp_pagenavi')) : // WP-PageNavi support ?>
+
+					<?php wp_pagenavi(); ?>
+
+				<?php else : ?>
+
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <?php if ( get_next_posts_link() ) : ?>
+                                <div class="nav-previous mr-auto"><?php next_posts_link( '<button class="btn btn-danger">' . __( '<span class="meta-nav">&larr;</span> Older posts', 'wp-jtiong' ) . '</button>' ); ?></div>
+                            <?php endif; ?>
+                        </div>
+                        <div class="col-sm-6 text-right">
+                            <?php if ( get_previous_posts_link() ) : ?>
+                                <div class="nav-next ml-auto"><?php previous_posts_link( '<button class="btn btn-danger">' . __( 'Newer posts <span class="meta-nav">&rarr;</span>', 'wp-jtiong' ) . '</button>' ); ?></div>
+                            <?php endif; ?>
+                        </div>
+                    </div>
+
+
+				<?php endif; ?>
+
+			<?php endif; ?>
+
+		</nav><!-- #<?php echo $nav_id; ?> -->
+		<?php
+	}
+endif; // wp_jtiong_content_nav
+
 if ( !function_exists( 'wp_jtiong_posted_author' ) ) :
 	/**
 	 * Prints HTML with meta information for the current author.

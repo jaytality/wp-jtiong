@@ -59,10 +59,24 @@ hr {
 }
     h2.wp-block-heading {
         font-size: 1.8rem;
+        font-weight: bold;
+        color: white;
+    }
+
+    h3.wp-block-heading {
+        font-size: 1.4rem;
+        font-weight: bold;
+        color: white;
     }
 
     hr.wp-block-separator {
         border-top: 1px #666 dashed;
+    }
+
+    .wp-element-caption {
+        text-align: center;
+        padding-left: 3rem;
+        padding-right: 3rem;
     }
 
 .entry-footer {
