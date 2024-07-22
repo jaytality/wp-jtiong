@@ -11,7 +11,7 @@
                 <div class="col-md-12 text-center">
                     <hr>
                     <small class="text-muted">
-                        jtiong.blog &bull; "Minty Charizard" v1.0 &bull; Copyright &copy; Johnathan Tiong, 2022 &rarr; <?=date('Y')?>. All Rights Reserved.
+                        jtiong.blog &bull; "Minty Charmander" v1.0 &bull; Copyright &copy; Johnathan Tiong, 2022 &rarr; <?=date('Y')?>. All Rights Reserved.
                     </small>
                     <br />
                     <br />
