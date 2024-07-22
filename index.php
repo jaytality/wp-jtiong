@@ -7,7 +7,7 @@
         <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-danger">
             <div class="container">
                 <a class="navbar-brand" href="<?php echo esc_url( home_url( '/' ) ); ?>">
-                    <img src="/public/img/logo.svg" alt="" style="height: 32px; padding-right: 16px; ">
+                    <img src="<?php echo get_bloginfo('template_url') ?>/assets/img/logo.svg" alt="" style="height: 32px; padding-right: 16px; ">
                     J T I O N G . B L O G
                 </a>
                 <ul class="navbar-nav mr-auto">
