@@ -43,7 +43,13 @@
 <!-- blog categories -->
 <div class="row">
     <div class="col-sm-12">
-        <?php
-        ?>
+        <h3><small class="text-muted">Categories</small></h3>
+        <ul>
+            <?php
+                wp_list_categories([
+                    'title_li' => '',
+                ]);
+            ?>
+        </ul>
     </div>
 </div>
