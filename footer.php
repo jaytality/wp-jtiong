@@ -11,9 +11,7 @@
                 <div class="col-md-12 text-center">
                     <hr>
                     <small class="text-muted">
-                        jtiong.dev version 1.05 &bull; Australia\Sydney Time Used &bull; <a href="/changelog">Changelog</a>
-                        <br />
-                        Copyright &copy; Johnathan Tiong, 2022 &rarr; <?=date('Y')?>. All Rights Reserved.</small>
+                        jtiong.blog &bull; Copyright &copy; Johnathan Tiong, 2022 &rarr; <?=date('Y')?>. All Rights Reserved.</small>
                     <br />
                     <br />
                 </div>
