@@ -1,0 +1,44 @@
+/**
+
+Theme: wp-jtiong
+Author: Johnathan Tiong
+Description: JT's personal blog theme
+Version: 1.0
+
+**/
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    padding: 0 15px;
+}
+
+.footer > .container {
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+code {
+    font-size: 80%;
+    background-color: #242424;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+hr {
+    border-top: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.text-author {
+    color: #ff2020!important;
+}
+
+.text-project {
+    color: #ffcc00!important;
+}
+
+.mainContent {
+    padding-top: 72px;
+}
