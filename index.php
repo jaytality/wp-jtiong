@@ -10,7 +10,10 @@
                     <img src="<?php echo get_bloginfo('template_url') ?>/assets/img/logo.svg" alt="" style="height: 32px; padding-right: 16px; ">
                     J T I O N G . B L O G
                 </a>
-                <ul class="navbar-nav mr-auto">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a href="https://jtiong.blog" class="nav-link active">Blog</a>
+                    </li>
                     <li class="nav-item">
                         <a href="https://jtiong.dev" class="nav-link">Commits</a>
                     </li>
