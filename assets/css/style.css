@@ -46,6 +46,10 @@ hr {
 /**
  wordpress specific styling for wp-jtiong
 **/
+#wpadminbar {
+    display: none;
+}
+
 .entry {
     color: #777;
     font-size: small;
