@@ -6,6 +6,7 @@ function theme_styles() {
 }
 
 add_action( 'wp_enqueue_scripts', 'theme_styles' );
+add_filter('show_admin_bar', '__return_false');
 
 if ( !function_exists( 'wp_jtiong_content_nav' ) ) :
 	/**
