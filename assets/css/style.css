@@ -82,3 +82,7 @@ hr {
 .entry-footer {
     padding-bottom: 64px;
 }
+
+.sticky-top {
+    top: 128px;
+}
