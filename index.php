@@ -53,8 +53,7 @@
                                     </div>
                                 </div>
                                 <div class="row entry-footer">
-                                    <div class="col-md-6"></div>
-                                    <div class="col-md-6 text-right"></div>
+                                    <div class="col-sm-12"><hr></div>
                                 </div>
                             <?php
                         endwhile;

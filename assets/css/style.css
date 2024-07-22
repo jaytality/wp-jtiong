@@ -61,6 +61,10 @@ hr {
         font-size: 1.8rem;
     }
 
+    hr.wp-block-separator {
+        border-top: 1px #666 dashed;
+    }
+
 .entry-footer {
     padding-bottom: 64px;
 }
