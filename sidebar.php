@@ -53,3 +53,9 @@
         </ul>
     </div>
 </div>
+
+<div class="row">
+    <div class="col-sm-12">
+        <small class="text-muted"><?=wp_count_posts()?> posts since April, 2016!</small>
+    </div>
+</div>
