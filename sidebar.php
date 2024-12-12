@@ -56,6 +56,10 @@
 
 <div class="row">
     <div class="col-sm-12">
-        <small class="text-muted"><?=wp_count_posts()?> posts since April, 2016!</small>
+        <?php
+        $count_posts = wp_count_posts('post');
+        $published_posts = $count_posts->publish;
+        ?>
+        <small class="text-muted"><?=$published_posts?> posts since April, 2016!</small>
     </div>
 </div>
