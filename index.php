@@ -17,6 +17,9 @@
                     <li class="nav-item">
                         <a href="https://jtiong.dev" class="nav-link">Commits</a>
                     </li>
+                    <li class="nav-item">
+                        <a href="https://www.instagram.com/jaytality.au/" class="nav-link">Instagram</a>
+                    </li>
                 </ul>
             </div>
         </nav>
@@ -50,6 +53,7 @@
                                         <h2 class="entry-title p-name">
                                             <a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>" rel="bookmark"><?php the_title(); ?></a>
                                         </h2>
+                                        <br>
                                     </div>
                                 </div>
                                 <div class="row entry-body">
