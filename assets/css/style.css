@@ -90,3 +90,17 @@ hr {
 .sticky-top {
     top: 128px;
 }
+
+figure.wp-block-embed {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+}
+
+@media (max-width: 768px) {
+    figure.wp-block-embed {
+        padding: 5px;
+        background-color: #000;
+    }
+}
