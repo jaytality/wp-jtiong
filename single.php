@@ -41,10 +41,10 @@
                             // Display post content
                             ?>
                                 <div class="row entry" id="post-<?php the_ID(); ?>">
-                                    <div class="col-sm-6">
+                                    <div class="col-sm-8">
                                         <?php wp_jtiong_posted_author(); ?> posted this in: <?=get_the_category_list(', ')?>
                                     </div>
-                                    <div class="col-sm-6 text-right">
+                                    <div class="col-sm-4 text-right">
                                         <?=wp_jtiong_get_post_date()?> &bull; <?=wp_jtiong_get_post_word_count()?>
                                     </div>
                                 </div>
