@@ -50,6 +50,7 @@
                                 </div>
                                 <div class="row entry-title">
                                     <div class="col-sm-12">
+                                        <br>
                                         <h2 class="entry-title p-name">
                                             <a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>" rel="bookmark"><?php the_title(); ?></a>
                                         </h2>
