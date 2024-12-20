@@ -61,19 +61,28 @@
                                     <div class="row">
                                         <div class="col-sm-12">
                                             <?php
+                                            // show excerpt...
                                             if (has_excerpt()) {
                                                 the_excerpt();
                                             } else {
+                                                // or full post!
                                                 the_content();
                                             }
                                             ?>
                                         </div>
                                     </div>
-                                    <div class="row">
-                                        <div class="col-sm-12 text-right">
-                                            <em><a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">Read more...</a></em>
+                                    <?php
+                                    if (has_excerpt()) {
+                                        // only show "read more" link if there's an excerpt to jump from...
+                                        ?>
+                                        <div class="row">
+                                            <div class="col-sm-12 text-right">
+                                                <em><a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">Read more...</a></em>
+                                            </div>
                                         </div>
-                                    </div>
+                                        <?php
+                                    }
+                                    ?>
                                 </div>
                                 <div class="row entry-footer">
                                     <div class="col-sm-12">
