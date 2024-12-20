@@ -57,15 +57,22 @@
                                         <br>
                                     </div>
                                 </div>
-                                <div class="row entry-body">
-                                    <div class="col-sm-12">
-                                        <?php
-                                        if (has_excerpt(the_ID())) {
-                                            the_excerpt();
-                                        } else {
-                                            the_content();
-                                        }
-                                        ?>
+                                <div class="entry-body">
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <?php
+                                            if (has_excerpt()) {
+                                                the_excerpt();
+                                            } else {
+                                                the_content();
+                                            }
+                                            ?>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-12 text-right">
+                                            <em><a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">Read more...</a></em>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="row entry-footer">
