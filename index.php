@@ -59,7 +59,13 @@
                                 </div>
                                 <div class="row entry-body">
                                     <div class="col-sm-12">
-                                        <?php the_content(); ?>
+                                        <?php
+                                        if (has_excerpt(the_ID())) {
+                                            the_excerpt();
+                                        } else {
+                                            the_content();
+                                        }
+                                        ?>
                                     </div>
                                 </div>
                                 <div class="row entry-footer">
