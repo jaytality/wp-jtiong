@@ -43,10 +43,16 @@ if ( !function_exists( 'wp_jtiong_content_nav' ) ) :
 
 			<?php if ( is_single() ) : // navigation links for single posts ?>
 
-				<?php wp_pagenavi(); ?>
+				<?php if (function_exists('wp_pagenavi')) : // WP-PageNavi support ?>
 
-				<?php previous_post_link( '<div class="nav-previous"><button class="btn btn-danger">%link</button></div>', '<span class="meta-nav">' . _x( '&larr;', 'Previous post link', 'wp-jtiong' ) . '</span> %title' ); ?>
-				<?php next_post_link( '<div class="nav-next"><button class="btn btn-danger">%link</button></div>', '%title <span class="meta-nav">' . _x( '&rarr;', 'Next post link', 'wp-jtiong' ) . '</span>' ); ?>
+					<?php wp_pagenavi(); ?>
+
+				<?php else : ?>
+
+					<?php previous_post_link( '<div class="nav-previous"><button class="btn btn-danger">%link</button></div>', '<span class="meta-nav">' . _x( '&larr;', 'Previous post link', 'wp-jtiong' ) . '</span> %title' ); ?>
+					<?php next_post_link( '<div class="nav-next"><button class="btn btn-danger">%link</button></div>', '%title <span class="meta-nav">' . _x( '&rarr;', 'Next post link', 'wp-jtiong' ) . '</span>' ); ?>
+				
+				<?php endif; ?>
 
 			<?php elseif ( $wp_query->max_num_pages > 1 && ( is_home() || is_archive() || is_search() ) ) : // navigation links for home, archive, and search pages ?>
 
