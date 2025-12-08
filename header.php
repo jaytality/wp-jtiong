@@ -8,6 +8,8 @@
  * @since 1.0.0
  */
 ?>
+
+<!-- start of wp-jtiong -->
 <!DOCTYPE html>
 <html lang="en">
 
