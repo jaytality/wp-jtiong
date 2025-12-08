@@ -49,8 +49,15 @@ if ( !function_exists( 'wp_jtiong_content_nav' ) ) :
 
 				<?php else : ?>
 
-					<?php previous_post_link( '<div class="nav-previous"><button class="btn btn-danger">%link</button></div>', '<span class="meta-nav">' . _x( '&larr;', 'Previous post link', 'wp-jtiong' ) . '</span> %title' ); ?>
-					<?php next_post_link( '<div class="nav-next"><button class="btn btn-danger">%link</button></div>', '%title <span class="meta-nav">' . _x( '&rarr;', 'Next post link', 'wp-jtiong' ) . '</span>' ); ?>
+                    <div class="row">
+                        <div class="col-sm-6">
+							<?php previous_post_link( '<div class="nav-previous"><button class="btn btn-danger">%link</button></div>', '<span class="meta-nav">' . _x( '&larr;', 'Previous post link', 'wp-jtiong' ) . '</span> %title' ); ?>
+                        </div>
+                        <div class="col-sm-6 text-right">
+							<?php next_post_link( '<div class="nav-next"><button class="btn btn-danger">%link</button></div>', '%title <span class="meta-nav">' . _x( '&rarr;', 'Next post link', 'wp-jtiong' ) . '</span>' ); ?>
+                        </div>
+                    </div>
+
 				
 				<?php endif; ?>
 
