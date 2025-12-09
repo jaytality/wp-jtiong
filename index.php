@@ -18,7 +18,7 @@
                         <a href="https://jtiong.dev" class="nav-link">Commits</a>
                     </li>
                     <li class="nav-item">
-                        <a href="https://www.instagram.com/jaytality.au/" class="nav-link">Instagram</a>
+                        <a href="https://www.instagram.com/jaytality.au/" class="nav-link"><i class="bi bi-instagram"></i></a>
                     </li>
                 </ul>
             </div>
