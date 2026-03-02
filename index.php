@@ -3,30 +3,10 @@
 ?>
 
 <body class="d-flex flex-column h-100">
-    <header>
-        <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-danger">
-            <div class="container">
-                <a class="navbar-brand" href="<?php echo esc_url( home_url( '/' ) ); ?>">
-                    <img src="<?php echo get_bloginfo('template_url') ?>/assets/img/logo.svg" alt="" style="height: 32px; padding-right: 16px; ">
-                    J T I O N G . B L O G
-                </a>
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a href="https://jtiong.blog" class="nav-link active">Blog</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="https://jtiong.dev" class="nav-link">Commits</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="https://jtiong.games" class="nav-link">Games</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="https://www.instagram.com/jaytality.au/" class="nav-link"><i class="bi bi-instagram"></i></a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-    </header>
+    <?php
+        // main menu
+        include('includes/menu.php');
+    ?>
 
     <!-- Begin page content -->
     <main role="main" class="flex-shrink-0 mainContent">
