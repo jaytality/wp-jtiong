@@ -12,17 +12,17 @@
             <ul class="navbar-nav me-auto">
                 <li class="nav-item">
                     <a href="#" class="nav-link" data-bs-toggle="offcanvas" data-bs-target="#blogSearch" aria-controls="offcanvasNavbar" aria-label="Toggle Blog Search">
-                        <i class="bi-search"></i>
+                        <i class="bi-search"></i> Search
                     </a>
                 </li>
                 <li class="nav-item">
                     <a href="#" class="nav-link" data-bs-toggle="offcanvas" data-bs-target="#blogCategories" aria-controls="offcanvasNavbar" aria-label="Toggle Blog Categories">
-                        Categories
+                        <i class="bi-inboxes"></i> Categories
                     </a>
                 </li>
                 <li class="nav-item">
                     <a href="#" class="nav-link" data-bs-toggle="offcanvas" data-bs-target="#blogTags" aria-controls="offcanvasNavbar" aria-label="Toggle Blog Tags">
-                        <i class="bi-tags"></i>
+                        <i class="bi-tags"></i> Tags
                     </a>
                 </li>
             </ul>
