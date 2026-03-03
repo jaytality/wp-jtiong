@@ -188,4 +188,17 @@ if ( !function_exists( 'wp_jtiong_get_post_word_count' ) ) :
 	}
 endif;
 
+/**
+ * JTIONG.COM SPECIFIC SETTINGS/FUNCTIONALITY
+ * bootstrap extra stuff here as needed
+ */
+
+// blog section as default
+if (
+	!isset($section) || 
+	empty($section)
+) {
+	$section = 'blog';
+}
+
 // end of file
