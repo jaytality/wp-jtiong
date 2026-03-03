@@ -17,7 +17,7 @@
 </div>
 
 <!-- archives dropdown -->
-<div class="row">
+<div class="row mt-5">
     <div class="col-md-12">
         <h3><small class="text-muted">Past Entries...</small></h3>
 
@@ -41,7 +41,7 @@
 </div>
 
 <!-- blog categories -->
-<div class="row">
+<div class="row mt-5">
     <div class="col-sm-12">
         <h3><small class="text-muted">Categories</small></h3>
         <ul>
@@ -60,6 +60,8 @@
         $count_posts = wp_count_posts('post');
         $published_posts = $count_posts->publish;
         ?>
-        <small class="text-muted"><?=$published_posts?> posts since April, 2016!</small>
+        <hr>
+        <small class="text-secondary"><?=$published_posts?> posts since April, 2016!</small>
+        <hr>
     </div>
 </div>

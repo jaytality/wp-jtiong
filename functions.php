@@ -1,12 +1,12 @@
 <?php
 
 function theme_styles() {
-    wp_enqueue_style('bootstrap-style', get_theme_file_uri('assets/css/bootstrap.min.css'));   // my additional customisations to bootstrap 4.6x
-    wp_enqueue_style('style', get_theme_file_uri('assets/css/style.css'));
+    wp_enqueue_style('bootstrap-style', get_theme_file_uri('assets/css/bootstrap.min.css'));   // my additional customisations to bootstrap
+    wp_enqueue_style('style', get_theme_file_uri('assets/css/style.css'), array(), uniqid(), 'all');
 }
 
 add_action( 'wp_enqueue_scripts', 'theme_styles' );
-add_filter('show_admin_bar', '__return_false');
+add_filter('show_admin_bar', '__return_false');		// never show admin bar
 
 if ( !function_exists( 'wp_jtiong_content_nav' ) ) :
 	/**
@@ -55,7 +55,7 @@ if ( !function_exists( 'wp_jtiong_content_nav' ) ) :
 								<?php previous_post_link( '<button class="btn btn-danger">%link</button>', '<span class="meta-nav">' . _x( '&larr;', 'Previous post link', 'wp-jtiong' ) . '</span> %title' ); ?>
 							</div>
                         </div>
-                        <div class="col-sm-6 text-right">
+                        <div class="col-sm-6 text-end">
 							<div class="nav-next ml-auto">
 								<?php next_post_link( '<button class="btn btn-danger">%link</button>', '%title <span class="meta-nav">' . _x( '&rarr;', 'Next post link', 'wp-jtiong' ) . '</span>' ); ?>
 							</div>
@@ -79,7 +79,7 @@ if ( !function_exists( 'wp_jtiong_content_nav' ) ) :
                                 <div class="nav-previous mr-auto"><?php next_posts_link( '<button class="btn btn-danger">' . __( '<span class="meta-nav">&larr;</span> Older posts', 'wp-jtiong' ) . '</button>' ); ?></div>
                             <?php endif; ?>
                         </div>
-                        <div class="col-sm-6 text-right">
+                        <div class="col-sm-6 text-end">
                             <?php if ( get_previous_posts_link() ) : ?>
                                 <div class="nav-next ml-auto"><?php previous_posts_link( '<button class="btn btn-danger">' . __( 'Newer posts <span class="meta-nav">&rarr;</span>', 'wp-jtiong' ) . '</button>' ); ?></div>
                             <?php endif; ?>
