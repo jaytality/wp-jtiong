@@ -161,10 +161,6 @@ hr {
     height: 464px;
 }
 
-.sidebar {
-    top: 76px; 
-}
-
 .prevPostButton a {
     text-decoration: none;
     color: #fff;
@@ -173,6 +169,14 @@ hr {
 .nextPostButton a {
     text-decoration: none;
     color: #fff;
+}
+
+/**
+ * SIDEBAR
+ */
+.sidebar {
+    top: 76px; 
+    z-index: 1;
 }
 
 .currentCat {
@@ -186,3 +190,18 @@ hr {
     .catLink:hover {
         color: #cddafc;
     }
+
+.tag-cloud-link {
+    color: #96aff4;
+}
+    .tag-cloud-link:hover {
+        color: #cddafc;
+    }
+
+/**
+ * FOOTER
+ */
+.footer {
+    margin-top: 32px;
+    background-color: #303037;
+}

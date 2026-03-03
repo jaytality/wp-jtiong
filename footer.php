@@ -5,18 +5,15 @@
      * @since 1.0.0
      */
 ?>
-    <footer class="footer mt-auto py-3 mb-5">
+    <footer class="footer py-5 mt-5 border-top border-light border-opacity-50">
         <div class="container">
             <div class="row">
                 <div class="col text-center">
-                    <hr>
                     <small class="text-secondary">
                         Made with <span class="text-danger"><i class="bi-heart-fill"></i></span> by JT
                         <br />
                         <sub>Copyright &copy; Johnathan Tiong, 2022 &rarr; <?=date('Y')?>. All Rights Reserved.</sub>
                     </small>
-                    <br />
-                    <br />
                 </div>
             </div>
         </div>
