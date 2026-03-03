@@ -1,11 +1,3 @@
-<?php
-if (!isset($section) ||
-    empty($section))
-    {
-        $section = 'blog';
-    }
-?>
-
 <ul class="navbar-nav ms-0">
     <li class="nav-item">
         <a href="https://jtiong.com" class="nav-link<?= $section == 'blog' ? ' active' : '' ?>">Blog</a>
