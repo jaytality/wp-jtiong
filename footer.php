@@ -8,11 +8,12 @@
     <footer class="footer mt-auto py-3 mb-5">
         <div class="container">
             <div class="row">
-                <div class="col-md-3"></div>
-                <div class="col-md-9 text-center">
+                <div class="col text-center">
                     <hr>
                     <small class="text-secondary">
-                        jtiong.com &bull; Copyright &copy; Johnathan Tiong, 2022 &rarr; <?=date('Y')?>. All Rights Reserved.
+                        Made with <span class="text-danger"><i class="bi-heart-fill"></i></span> by JT
+                        <br />
+                        <sub>Copyright &copy; Johnathan Tiong, 2022 &rarr; <?=date('Y')?>. All Rights Reserved.</sub>
                     </small>
                     <br />
                     <br />
