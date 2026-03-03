@@ -4,11 +4,12 @@
         <small>
             <ul class="navbar-nav ms-0">
                 <?php
-                    // if they're an administrator
-                    if (in_array('administrator', (array)$current_user->roles, true)) {
+                    if (is_user_logged_in()) {
                         ?>
                         <li class="nav-item">
-                            <a href="<?= admin_url() ?>" class="nav-link">WP Admin</a>
+                            <a href="#" class="nav-link" data-bs-toggle="offcanvas" data-bs-target="#membersOnly" aria-controls="offcanvasNavbar" aria-label="Members Only">
+                                <i class="bi bi-person-fill-lock"></i> Members Only <i class="bi bi-indent"></i>
+                            </a>
                         </li>
                         <?php
                     }
@@ -22,7 +23,7 @@
                 // if user is logged in
                 if (is_user_logged_in()) {
                     ?>
-                    Hello <?= esc_html($current_user->display_name) ?> 
+                    <?= esc_html($current_user->display_name) ?> 
                     ( <a href="<?= wp_logout_url("https://jtiong.com") ?>">Sign Out</a> )
                     <?php
                 } else {
@@ -114,6 +115,11 @@ switch($section) {
         break;
     default:
         // do nothing
+}
+
+// members only menu
+if (is_user_logged_in()) {
+    include('menus/members.php');
 }
 
 // end of file

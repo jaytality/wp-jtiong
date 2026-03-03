@@ -57,6 +57,13 @@ hr {
 #topNav {
     z-index: 100;
 }
+    #topNav a {
+        text-decoration: none;
+    }
+
+    #topNav .dropdown-menu {
+        z-index: 300 !important;
+    }
 
 #mainNav {
     z-index: 200;
