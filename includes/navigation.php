@@ -1,6 +1,21 @@
 <!-- TOP NAVBAR -->
 <nav id="topNav" class="navbar navbar-expand-sm navbar-dark bg-black border-bottom border-body p-0 mb-0 fixed-top" data-bs-theme="dark">
     <div class="container">
+        <small>
+            <ul class="navbar-nav ms-0">
+                <?php
+                    // if they're an administrator
+                    if (in_array('administrator', (array)$current_user->roles, true)) {
+                        ?>
+                        <li class="nav-item">
+                            <a href="<?= admin_url() ?>" class="nav-link">WP Admin</a>
+                        </li>
+                        <?php
+                    }
+                ?>
+            </ul>
+        </small>
+
         <span class="navbar-text ms-auto">
             <small>
             <?php
