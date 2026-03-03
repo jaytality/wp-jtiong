@@ -22,7 +22,7 @@
 </nav>
 
 <!-- MAIN NAVBAR -->
-<nav id="mainNav" class="navbar navbar-expand-lg navbar-dark bg-jtSnax sticky-top border-bottom border-body d-none d-sm-block" data-bs-theme="dark">
+<nav id="mainNav" class="navbar navbar-expand-sm navbar-dark bg-jtSnax sticky-top border-bottom border-body d-none d-sm-block" data-bs-theme="dark">
     <div class="container">
         <a class="navbar-brand" href="<?php echo esc_url( home_url( '/' ) ); ?>">
             <img src="<?php echo get_bloginfo('template_url') ?>/assets/img/logo.svg" alt="" style="height: 32px; ">

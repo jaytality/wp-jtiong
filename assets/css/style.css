@@ -40,12 +40,19 @@ hr {
     color: #ffcc00!important;
 }
 
-.mainContent {
-    padding-top: 128px; 
+/* 
+ * WORDPRESS IMAGE STUFF
+ */
+.wp-lightbox-overlay .scrim {
+    background: rgba(0, 0, 0, 0.65) !important;
+}
+
+.wp-block-image img {
+    border: 1px solid #3e3e3e;
 }
 
 /* 
- * navigation
+ * NAVBARS
  */
 #topNav {
     z-index: 100;
@@ -60,11 +67,6 @@ hr {
     font-family: 'Poppins', sans-serif;
     font-style: normal;
     margin-top: 41px !important;
-}
-
-.bg-jtSidebar {
-    background-color: #1c1c25;
-    border-color: #444;
 }
 
 .btn-close {
@@ -87,15 +89,15 @@ hr {
     }
 
 .entry-title {
-    font-family: 'Poppins', sans-serif;
+    /* font-family: 'Poppins', sans-serif; */
     font-style: normal;
-    font-weight: 900;
+    /* font-weight: 900; */
 }
 
 .entry-title a {
-    font-family: 'Poppins', sans-serif;
+    /* font-family: 'Poppins', sans-serif; */
     font-style: normal;
-    font-weight: 900;
+    /* font-weight: 900; */
     text-decoration: none !important;
     color: #0099ff;
 }
@@ -142,7 +144,7 @@ hr {
     }
 
 .entry-footer {
-    padding-bottom: 64px;
+    padding-bottom: 32px;
 }
 
 .embed-responsive {
@@ -156,4 +158,14 @@ hr {
 
 .sidebar {
     top: 148px; 
+}
+
+.prevPostButton a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.nextPostButton a {
+    text-decoration: none;
+    color: #fff;
 }

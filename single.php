@@ -34,7 +34,6 @@
                                         <h2 class="entry-title p-name">
                                             <?php the_title(); ?>
                                         </h2>
-                                        <br>
                                     </div>
                                 </div>
                                 <div class="row entry-body">
