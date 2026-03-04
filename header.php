@@ -29,4 +29,17 @@
 
     <!-- wordpress header -->
 	<?php wp_head(); ?>
+
+    <!-- section styles -->
+    <?php
+    	switch ($section) {
+            case 'games':
+                ?>
+                   <link rel="stylesheet" href="<?= get_template_directory() . '/assets/css/games' ?>.css">
+                <?php
+                break;
+            
+            default: // do nothing
+        }
+    ?>
 </head>

@@ -185,6 +185,20 @@ hr {
     top: 76px; 
     z-index: 1;
 }
+    .sidebarGames {
+        top: 64px; 
+        z-index: 1;
+    }
+
+.accordion-button-icon::after {
+    font-family: "bootstrap-icons";
+    content: "\F4FD"; /* plus */
+    color: #777;
+}
+
+.accordion-button-icon:not(.collapsed)::after {
+    content: "\F2E9"; /* dash */
+}
 
 .currentCat {
     color: #fff;

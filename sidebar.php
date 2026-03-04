@@ -80,11 +80,11 @@ function jt_render_category_accordion(array $nodes, int $current_id, string $acc
 
         // Separate toggle button (so clicking the link doesn't toggle)
         if ($has_kids) {
-            echo '    <button class="btn btn-sm pr-3 ' . esc_attr($btn_collapsed) . '" type="button"';
+            echo '    <button class="btn btn-sm pr-3 ' . esc_attr($btn_collapsed) . ' accordion-button-icon" type="button"';
             echo '      data-bs-toggle="collapse" data-bs-target="#' . esc_attr($collapse_id) . '"';
             echo '      aria-expanded="' . esc_attr($aria_expanded) . '" aria-controls="' . esc_attr($collapse_id) . '">';
-            echo '      <span class="visually-hidden">Toggle</span>';
-            echo '      <span aria-hidden="true"><i class="bi bi-plus-square"></i></span>';
+            // echo '      <span class="visually-hidden">Toggle</span>';
+            // echo '      <span aria-hidden="true"><i class="bi bi-plus-square"></i></span>';
             echo '    </button>';
         } else {
             // Spacer so rows align
